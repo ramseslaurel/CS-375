@@ -20,7 +20,7 @@ function init() {
 
     //Tetrahedron
 
-    let tetrahedron = new Tetrahedron(gl, 40, 20);
+    let tetrahedron = new Tetrahedron(gl);
     
     let tetrahedron_angle = 0.0;
     //
