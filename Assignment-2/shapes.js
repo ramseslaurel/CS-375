@@ -49,7 +49,7 @@ function render() {
     tetrahedron_angle %= 360.0;
 
     ms.push();
-    ms.rotate(stetrahedron_angle, [1, 0, 0]);
+    ms.rotate(tetrahedron_angle, [1, 0, 0]);
     ms.scale(.70,.25,1);
     ms.translate(0.5,0,0.5);
     tetrahedron.MV = ms.current();
