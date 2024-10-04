@@ -20,18 +20,18 @@ function render() {
 
     gl.clear(gl.COLOR_BUFFER_BIT | gl.DEPTH_BUFFER_BIT);
 
-                    angle += 1.0;
-                    angle %= 360.0;
+    angle += 1.0;
+    angle %= 360.0;
 
-                    ms.push();
-                    ms.rotate(angle, [0, 1, 0]);
-                    ms.scale(0.9);
-                    sphere.MV = ms.current();
-                    sphere.draw();
-                    ms.pop();
+    ms.push();
+    ms.rotate(angle, [0, 1, 0]);
+    ms.scale(0.9);
+    sphere.MV = ms.current();
+    sphere.draw();
+    ms.pop();
 
-                    requestAnimationFrame(render);
-                };
+    requestAnimationFrame(render);
+}
 
     render();
 }
