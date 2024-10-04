@@ -8,7 +8,7 @@ function init() {
 
     // Add initialization code here
 
-    gl.clearColor(1.0, 0.0, 0.0, 1.0);
+    gl.clearColor(0.2, 0.2, 0.2, 1.0);
     gl.enable(gl.DEPTH_TEST);
     let sphere = new Sphere(gl, 36, 18);
     let ms = new MatrixStack();
@@ -25,7 +25,7 @@ function render() {
 
     ms.push();
     ms.rotate(angle, [0, 1, 0]);
-    ms.scale(0.9);
+    ms.scale(0.6);
     sphere.MV = ms.current();
     sphere.color = vec4(0.5, 0.0, 0.5, 1.0);
     sphere.draw(gl);
