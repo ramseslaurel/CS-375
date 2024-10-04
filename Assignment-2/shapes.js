@@ -27,6 +27,7 @@ function render() {
     ms.rotate(angle, [0, 1, 0]);
     ms.scale(0.9);
     sphere.MV = ms.current();
+    sphere.color = vec4(0.5, 0.0, 0.5, 1.0);
     sphere.draw();
     ms.pop();
 
