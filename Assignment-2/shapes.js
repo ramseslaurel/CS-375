@@ -18,15 +18,17 @@ function init() {
 function render() {
     // Add rendering code here
 
-      gl.clear(gl.COLOR_BUFFER_BIT | gl.DEPTH_BUFFER_BIT);
+    gl.clear(gl.COLOR_BUFFER_BIT | gl.DEPTH_BUFFER_BIT);
 
     angle += 1.0;
     angle %= 360.0;
 
     ms.push();
     ms.rotate(angle, [0, 1, 0]);
-    ms.scale(0.6);
+    ms.scale(.50,.25,.50);
+    ms.translate(0.5,-0.5,0.0);
     sphere.MV = ms.current();
+    sphere.color = vec4(0.5, 0.0, 0.5, 1.0);
     sphere.draw();
     ms.pop();
 
