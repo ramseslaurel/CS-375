@@ -8,7 +8,7 @@ function init() {
 
     // Add initialization code here
 
-    gl.clearColor(0.2, 0.2, 0.2, 1.0);
+    gl.clearColor(1.0, 0.0, 0.0, 1.0);
     gl.enable(gl.DEPTH_TEST);
     let sphere = new Sphere(gl, 36, 18);
     let ms = new MatrixStack();
