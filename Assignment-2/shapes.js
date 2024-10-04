@@ -11,16 +11,17 @@ function init() {
     gl.clearColor(0.2, 0.2, 0.2, 1.0);
     gl.enable(gl.DEPTH_TEST);
 
+    let ms = new MatrixStack();
     //sphere
     let sphere = new Sphere(gl, 36, 18);
-    let ms = new MatrixStack();
+    
     let sphere_angle = 0.0;
     //
 
     //Tetrahedron
 
     let tetrahedron = new Tetrahedron(gl, 40, 20);
-    let ms = new MatrixStack();
+    
     let tetrahedron_angle = 0.0;
     //
 
