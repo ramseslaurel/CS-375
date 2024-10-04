@@ -18,7 +18,7 @@ function init() {
 function render() {
     // Add rendering code here
 
-    gl.clear(gl.COLOR_BUFFER_BIT | gl.DEPTH_BUFFER_BIT);
+      gl.clear(gl.COLOR_BUFFER_BIT | gl.DEPTH_BUFFER_BIT);
 
     angle += 1.0;
     angle %= 360.0;
@@ -27,15 +27,13 @@ function render() {
     ms.rotate(angle, [0, 1, 0]);
     ms.scale(0.6);
     sphere.MV = ms.current();
-    sphere.color = vec4(0.5, 0.0, 0.5, 1.0);
-    sphere.draw(gl);
+    sphere.draw();
     ms.pop();
 
     requestAnimationFrame(render);
-}
+    }
 
     render();
 }
-
 window.onload = init;
 
